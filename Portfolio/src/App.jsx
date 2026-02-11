@@ -1,4 +1,4 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/projects";
 import Concrete_Project from "./pages/concrete_project";
@@ -7,7 +7,7 @@ import ErrorPage from "./pages/ErrorPage";
 import { projectsLoader } from "./loaders/projectsLoader";
 import { projectLoader } from "./loaders/detailsLoader";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Home />,
